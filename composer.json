@@ -93,6 +93,7 @@
             "bin/phpunit"
         ],
         "tests-full": [
+            "bin/console security:check",
             "bin/console cache:clear --env=test",
             "bin/console d:s:d --force --full-database --env=test",
             "bin/console d:s:u --force --env=test",
