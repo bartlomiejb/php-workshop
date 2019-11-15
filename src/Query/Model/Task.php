@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Query\Model;
 
 final class Task implements \JsonSerializable
@@ -48,9 +50,7 @@ final class Task implements \JsonSerializable
             'id' => $this->id,
             'userId' => $this->userId,
             'title' => $this->title,
-            'completed' => $this->completed
+            'completed' => $this->completed,
         ];
     }
-
-
 }

@@ -94,6 +94,7 @@
             "bin/phpunit"
         ],
         "tests-full": [
+            "php-cs-fixer fix --dry-run --diff",
             "bin/console security:check",
             "bin/console cache:clear --env=test",
             "bin/console d:s:d --force --full-database --env=test",

@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Query;
-
 
 use App\Query\Model\Task;
 use Doctrine\DBAL\Connection;
@@ -24,7 +24,7 @@ final class TaskQuery
      */
     public function findAll(): array
     {
-        return array_map(function(array $row): Task {
+        return array_map(function (array $row): Task {
             return Task::fromArray($row);
         }, $this->connection->fetchAll('SELECT * FROM task'));
     }

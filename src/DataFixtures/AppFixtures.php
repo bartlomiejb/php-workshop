@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\DataFixtures;
 
 use App\Entity\Task;
@@ -13,7 +15,7 @@ class AppFixtures extends Fixture
     {
         $faker = Factory::create();
 
-        for ($i=0; $i<10; $i++) {
+        for ($i = 0; $i < 10; ++$i) {
             $manager->persist(new Task(
                 $faker->randomNumber(2),
                 $faker->sentence,

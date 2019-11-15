@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Entity;
 
@@ -48,8 +49,9 @@ class Task
         $this->completed = false;
     }
 
-    public function changeTitle(string $title): void {
-        if($this->completed) {
+    public function changeTitle(string $title): void
+    {
+        if ($this->completed) {
             throw new \RuntimeException('Title change is allowed only for not completed tasks');
         }
 

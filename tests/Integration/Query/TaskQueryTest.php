@@ -1,13 +1,11 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Integration\Query;
 
-
-use App\Entity\Task;
 use App\Query\TaskQuery;
 use App\Tests\Symfony\KernelTestCase;
-use Doctrine\Common\Persistence\ObjectManager;
 
 final class TaskQueryTest extends KernelTestCase
 {

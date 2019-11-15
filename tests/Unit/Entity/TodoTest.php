@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Tests\Unit\Entity;
-
 
 use App\Entity\Task;
 use PHPUnit\Framework\TestCase;

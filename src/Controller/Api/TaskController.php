@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Controller\Api;
-
 
 use App\Query\TaskQuery;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
